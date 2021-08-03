@@ -42,7 +42,7 @@
   
 * Dirección MAC de la tarjeta wifi: 42-9F-38-C2-0D-69
 * Dirección IP (Interna, del router): 192.168.1.32
-* Dirección IP (Externa, del ISP): 190.196.168.111
+* Dirección IP (Externa, del ISP): 190.196.168.1** (por privacidad prefiero no dar todo mi IP jaja)
 * Proveedor internet: GTD Manquehue.
 
 
