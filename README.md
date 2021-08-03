@@ -40,9 +40,9 @@
   * Sistema de archivos: EXT4
 
   
-* Dirección MAC de la tarjeta wifi: 42-9F-38-C2-0D-69
+* Dirección MAC de la tarjeta wifi: 42-9F-38-C2-0D-** (por privacidad prefiero no dar completa mi dirección jaja)
 * Dirección IP (Interna, del router): 192.168.1.32
-* Dirección IP (Externa, del ISP): 190.196.168.1** (por privacidad prefiero no dar todo mi IP jaja)
+* Dirección IP (Externa, del ISP): 190.196.168.111 
 * Proveedor internet: GTD Manquehue.
 
 
