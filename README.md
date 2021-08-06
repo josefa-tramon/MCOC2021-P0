@@ -80,3 +80,6 @@ El desempeño MATMUL en mi computador es el siguiente:
 
 ![Desempeño_MATMUL](https://user-images.githubusercontent.com/62305749/128538229-5f28ada9-ff8c-4898-8522-f43bee897632.png)
 
+
+Se puede apreciar como los procesadores lógicos, que serían los 4 hilos mencionados previamente, estan mayoritariamente trabajando al 100% de su capacidad, cada uno representado en los graficos. La baja en los graficos y luego subida se debe a la variaci{on de matrices que se estan trabajando en el programa, siendo las de menor tamaño primero, y luego las de mayor tamaño, produciendo el uso completo del CPU.
+
