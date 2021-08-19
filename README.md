@@ -83,3 +83,17 @@ El desempeño MATMUL en mi computador es el siguiente:
 
 Se puede apreciar como los procesadores lógicos, que serían los 4 hilos mencionados previamente, estan mayoritariamente trabajando al 100% de su capacidad, cada uno representado en los graficos. La baja en los graficos y luego subida se debe a la variaci{on de matrices que se estan trabajando en el programa, siendo las de menor tamaño primero, y luego las de mayor tamaño, produciendo el uso completo del CPU.
 
+
+P03:
+
+¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
+
+* 
+
+
+
+¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas. 
+
+
+
+
