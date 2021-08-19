@@ -134,7 +134,11 @@ CASO 3:
 
 COMPORTAMIENTO EQUIPO DURANTE PROCESOS:
 
+
+Se puede ver el uso completo de la CPU al procesar los calculos solicitados.
 ![CPU](https://user-images.githubusercontent.com/62305749/130003582-34ce0d03-da3d-4d8d-86a4-e6c0cf084bf3.jpeg)
+
+El uso de memoria fue de un 50% aproximadamente.
 ![Memoria](https://user-images.githubusercontent.com/62305749/130003583-e65ac1cc-a0a5-4fa0-9cfd-ba6218be4891.jpeg)
 
 
