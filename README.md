@@ -88,9 +88,9 @@ P03:
 
 ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
 
-* El método de numpy 
+* El método de numpy utiliza el algoritmo de Gauss - Jordan, en el cual se encuentra la inversa de una matriz a traves ecuaciones, donde el numero de ecuaciones sera el mismo al número de incognitas, las cuales pertenecerán a la matriz inversa de una matriz A conocida. Esto se encuentra al multiplicar la matriz A conocida con la matriz identidad I, y despejando la solución correspondiente. 
 
-* El método de Scipy utiliza el algoritmo de Gauss - Jordan, en el cual se encuentra la inversa de una matriz a traves ecuaciones, donde el numero de ecuaciones sera el mismo al número de incognitas, las cuales pertenecerán a la matriz inversa de una matriz A conocida. Esto se encuentra al multiplicar la matriz A conocida con la matriz identidad I, y despejando la solución correspondiente. 
+* El método de Scipy utiliza el algoritmo de Gauss - Jordan, igual que el método de numpy.
 
   Para el caso 2: overwrite_a = True , se sobreescribira el resultado obtenido en la misma matriz A, dentro del sistema, lo cual es "más beneficioso" ya que se reutiliza espacio previamente ocupado por la matriz A original. a veces se cumple y otras no, todo dependerá de cuan especifico son los resultados esperados.
   
