@@ -169,3 +169,41 @@ Al igual que en el calculo de solve, para ambos tipos de d_type utilizados, floa
 El caso de mayor eficiencia es en un inicio, con matrices de dimensión menor a 200, es el número 4, donde el parametro driver = "evr", no se sobreescribe la matriz A, pero si el vector b. Posterior a esa dimensión, tiene mayor eficiencia en tiempo el caso 3, donde la unica diferencia con el caso 4 es que el parametro driver = "evd". Esto es porque los driver routines son más o menos eficientes según el procesador, y para este caso, estos funcionan así, siendo el 3 caso, el driver routine que mejor resuelve ecuaciones lineales en el sistema. 
 
 
+
+RESULTADOS CASOS SOLVER:
+
+![Solve 6 Double](https://user-images.githubusercontent.com/62305749/130311853-2ac1b3f1-bf94-4f41-96c7-c0f8f0e2df37.png)
+![Solve 5 Float](https://user-images.githubusercontent.com/62305749/130311855-fff3dc39-bb6b-43a9-83e4-18a397f2f743.png)
+![Solve 5 Double](https://user-images.githubusercontent.com/62305749/130311856-63798c1c-4cf1-4ce6-b06a-51d5c980546f.png)
+![Solve 4 Float](https://user-images.githubusercontent.com/62305749/130311857-0ecb4de9-e203-482b-b277-2b1894bfc451.png)
+![Solve 4 Double](https://user-images.githubusercontent.com/62305749/130311859-2ecaa62c-1669-443f-af42-1c08fc248bf9.png)
+![Solve 3 Float](https://user-images.githubusercontent.com/62305749/130311860-55f15292-0b97-4475-8c76-d0a80c9a3f51.png)
+![Solve 3 Double](https://user-images.githubusercontent.com/62305749/130311861-be26cdf7-05f0-485d-8489-afbc7c1b6eae.png)
+![Solve 2 Float](https://user-images.githubusercontent.com/62305749/130311862-097e938a-050e-45d9-9fce-e7a16c46b275.png)
+![Solve 2 Double](https://user-images.githubusercontent.com/62305749/130311863-2e94bd36-89aa-47ac-a2bc-053b91817ab7.png)
+![Solve 1 Float](https://user-images.githubusercontent.com/62305749/130311864-a807e7e5-49cb-4641-a3ea-2311b39a571f.png)
+![Solve 1 Double](https://user-images.githubusercontent.com/62305749/130311866-b5d7bf3f-acb3-4414-91ee-99502f971efb.png)
+![Solve 7 Float](https://user-images.githubusercontent.com/62305749/130311868-4a180c40-9998-42d7-8329-68e42e0b7061.png)
+![Solve 7 Double](https://user-images.githubusercontent.com/62305749/130311870-dc28ae0a-2632-43d8-a5fe-95ac0f6e2c48.png)
+![Solve 6 Float](https://user-images.githubusercontent.com/62305749/130311871-affa0d5d-97d6-4bd3-a009-106021bf09f3.png)
+
+
+
+
+RESULTADOS CASOS EIGH:
+
+![Eigh 4 Float](https://user-images.githubusercontent.com/62305749/130311878-e2762438-90e9-4e62-82ec-f570fe21bf7e.png)
+![Eigh 4 Double](https://user-images.githubusercontent.com/62305749/130311880-b6c763d2-98f6-4b67-8535-b3f5e288bae4.png)
+![Eigh 3 Float](https://user-images.githubusercontent.com/62305749/130311881-f179d34c-5eec-4be4-8692-e5a1f1ab247c.png)
+![Eigh 3 Double](https://user-images.githubusercontent.com/62305749/130311882-fa7c4944-b34c-481b-bdc2-c4b82c780fb9.png)
+![Eigh 2 Float](https://user-images.githubusercontent.com/62305749/130311883-bca89524-d548-44c6-8cfd-174c1722887b.png)
+![Eigh 2 Double](https://user-images.githubusercontent.com/62305749/130311884-07208e47-161b-442e-b8ce-8c16b2c1ae97.png)
+![Eigh 1 Float](https://user-images.githubusercontent.com/62305749/130311885-908142c4-a937-4b39-9b8e-b2fb46af172a.png)
+![Eigh 1 Double](https://user-images.githubusercontent.com/62305749/130311886-748e6b3f-9ce8-4cc4-846b-a770c9e8e4ad.png)
+![Eigh 5 Float](https://user-images.githubusercontent.com/62305749/130311887-ffd6cae3-8aab-4df8-8062-d278f9b3930a.png)
+![Eigh 5 Double](https://user-images.githubusercontent.com/62305749/130311888-ef4eda76-cb24-4f48-a36e-a9b945a4182c.png)
+
+
+
+
+
