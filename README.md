@@ -150,9 +150,9 @@ Haga un comentario completo respecto de todo lo que ve en términos de desempeñ
 
 *Para Solve:
 
-![Promedios Rendimientos Solve Float](https://user-images.githubusercontent.com/62305749/130311333-00e5c3a3-b2e6-4090-8b30-c0ab9d83b53e.png)
+![Promedios Rendimientos Solve Float](https://user-images.githubusercontent.com/62305749/130311975-b1243992-98dc-468b-9991-4414a5112a64.png)
 
-![Promedios Rendimientos Solve Double](https://user-images.githubusercontent.com/62305749/130311331-2de54724-5c2b-47ad-9d41-90ee0878bcf4.png)
+![Promedios Rendimientos Solve Double](https://user-images.githubusercontent.com/62305749/130311971-28f4ccbd-fa5a-4f6a-a984-f4dec7932dab.png)
 
 Para ambos tipos de d_type utilizados, float y double, se generan los mismos resultados, esto se puede deber, a que los decimales solo generan mayor exactitud de los resultados, y al ser float uno ya bastante exacto, la diferencia con double es mínima.
 
@@ -160,9 +160,9 @@ Si se ven las matrices en crecimiento, el caso que predomina en rendimiento es e
 
 *Para Eigh:
 
-![Promedios Rendimientos Eigh Float](https://user-images.githubusercontent.com/62305749/130311329-8a523b00-527f-4660-9f25-d2032f0bcd94.png)
+![Promedios Rendimientos Eigh Float](https://user-images.githubusercontent.com/62305749/130311973-ece810a2-bb11-4ede-9326-d5e98d4c6507.png)
 
-![Promedios Rendimientos Eigh Double](https://user-images.githubusercontent.com/62305749/130311334-7cca162b-00a1-4e36-82cd-04e92375c2bf.png)
+![Promedios Rendimientos Eigh Double](https://user-images.githubusercontent.com/62305749/130311974-81e0f14f-8b92-4e30-b6c7-c902c01183a5.png)
 
 Al igual que en el calculo de solve, para ambos tipos de d_type utilizados, float y double, se generan los mismos resultados, esto se puede deber, a que los decimales solo generan mayor exactitud de los resultados, y al ser float uno ya bastante exacto, la diferencia con double es mínima.
 
