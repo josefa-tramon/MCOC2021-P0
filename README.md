@@ -143,3 +143,29 @@ El uso de memoria fue de un 50% aproximadamente.
 
 
 
+
+P04:
+
+Haga un comentario completo respecto de todo lo que ve en términos de desempeño en cada problema. ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? ¿A que se puede deber la superioridad de cada opción? ¿Su computador usa más de un proceso por cada corrida? ¿Que hay del uso de memoria (como crece)? 
+
+*Para Solve:
+
+![Promedios Rendimientos Solve Float](https://user-images.githubusercontent.com/62305749/130311333-00e5c3a3-b2e6-4090-8b30-c0ab9d83b53e.png)
+
+![Promedios Rendimientos Solve Double](https://user-images.githubusercontent.com/62305749/130311331-2de54724-5c2b-47ad-9d41-90ee0878bcf4.png)
+
+Para ambos tipos de d_type utilizados, float y double, se generan los mismos resultados, esto se puede deber, a que los decimales solo generan mayor exactitud de los resultados, y al ser float uno ya bastante exacto, la diferencia con double es mínima.
+
+Si se ven las matrices en crecimiento, el caso que predomina en rendimiento es el 4to, donde Solve tiene a su parametro assume_a = "sym", que trabaja la matríz como si esta fuera simétrica, lo cual se entiende ya que una matríz simétrica tiene ventajas a la hora de generarse su inversa, a diferencia de una que no lo es. Como el programa asume esa condición, le es más facil y rápido trabajar. Las menos eficientes son el caso 7 y 2, lo cual se podría explicar ya que para el primero mencionado, reescribe la matriz a y el vector b, para reutilizar memoria, sin embargo esta acción, mientras mayor es la dimensión de la matríz, más lento el proceso y por tanto, tiene menor rendimiento. Para el primer caso, asume por default, que es una matríz generica, osea no simetrica, y por tanto, su trabajo tambien es poco eficiente.
+
+*Para Eigh:
+
+![Promedios Rendimientos Eigh Float](https://user-images.githubusercontent.com/62305749/130311329-8a523b00-527f-4660-9f25-d2032f0bcd94.png)
+
+![Promedios Rendimientos Eigh Double](https://user-images.githubusercontent.com/62305749/130311334-7cca162b-00a1-4e36-82cd-04e92375c2bf.png)
+
+Al igual que en el calculo de solve, para ambos tipos de d_type utilizados, float y double, se generan los mismos resultados, esto se puede deber, a que los decimales solo generan mayor exactitud de los resultados, y al ser float uno ya bastante exacto, la diferencia con double es mínima.
+
+El caso de mayor eficiencia es en un inicio, con matrices de dimensión menor a 200, es el número 4, donde el parametro driver = "evr", no se sobreescribe la matriz A, pero si el vector b. Posterior a esa dimensión, tiene mayor eficiencia en tiempo el caso 3, donde la unica diferencia con el caso 4 es que el parametro driver = "evd". Esto es porque los driver routines son más o menos eficientes según el procesador, y para este caso, estos funcionan así, siendo el 3 caso, el driver routine que mejor resuelve ecuaciones lineales en el sistema. 
+
+
