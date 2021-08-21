@@ -156,7 +156,8 @@ Haga un comentario completo respecto de todo lo que ve en términos de desempeñ
 
 Para ambos tipos de d_type utilizados, float y double, se generan los mismos resultados, esto se puede deber, a que los decimales solo generan mayor exactitud de los resultados, y al ser float uno ya bastante exacto, la diferencia con double es mínima.
 
-Si se ven las matrices en crecimiento, el caso que predomina en rendimiento es el 4to, donde Solve tiene a su parametro assume_a = "sym", que trabaja la matríz como si esta fuera simétrica, lo cual se entiende ya que una matríz simétrica tiene ventajas a la hora de generarse su inversa, a diferencia de una que no lo es. Como el programa asume esa condición, le es más facil y rápido trabajar. Las menos eficientes son el caso 7 y 2, lo cual se podría explicar ya que para el primero mencionado, reescribe la matriz a y el vector b, para reutilizar memoria, sin embargo esta acción, mientras mayor es la dimensión de la matríz, más lento el proceso y por tanto, tiene menor rendimiento. Para el primer caso, asume por default, que es una matríz generica, osea no simetrica, y por tanto, su trabajo tambien es poco eficiente.
+Si se ven las matrices en crecimiento, el caso que predomina en rendimiento es el 4to, donde Solve tiene a su parametro assume_a = "sym", que trabaja la matríz como si esta fuera simétrica, lo cual se entiende ya que una matríz simétrica tiene ventajas a la hora de generarse su inversa, a diferencia de una que no lo es. Como el programa asume esa condición, le es más facil y rápido trabajar. Las menos eficientes son el caso 7 y 2, lo cual se podría explicar ya que para el primero mencionado, reescribe la matriz a y el vector b, para reutilizar memoria, sin embargo esta acción, mientras mayor es la dimensión de la matríz, más lento el proceso y por tanto, tiene menor rendimiento. Para el primer caso, asume por default, que es una matríz generica, osea no simetrica, y por tanto, su trabajo tambien es poco eficiente. 
+
 
 *Para Eigh:
 
@@ -168,7 +169,13 @@ Al igual que en el calculo de solve, para ambos tipos de d_type utilizados, floa
 
 El caso de mayor eficiencia es en un inicio, con matrices de dimensión menor a 200, es el número 4, donde el parametro driver = "evr", no se sobreescribe la matriz A, pero si el vector b. Posterior a esa dimensión, tiene mayor eficiencia en tiempo el caso 3, donde la unica diferencia con el caso 4 es que el parametro driver = "evd". Esto es porque los driver routines son más o menos eficientes según el procesador, y para este caso, estos funcionan así, siendo el 3 caso, el driver routine que mejor resuelve ecuaciones lineales en el sistema. 
 
+En cuanto al uso de memoria:
 
+![CPU Entrega 4](https://user-images.githubusercontent.com/62305749/130312157-355fd942-c0b5-47ac-a391-c934a07aed71.jpeg)
+
+![Memoria Entrega 4](https://user-images.githubusercontent.com/62305749/130312158-e0c61c80-f84e-4f83-a30c-e300973230f9.jpeg)
+
+Para ambos casos, se utilizan los 4 hilos, y la memoria es utilizada en un 50%. Por ultimo, para las matrices, con el uso de Eigh, su memoria crece linealmente, en cambio en solve, este cálculo ocupa memoria variable, ya que como las dimensiones no crecen linealmente sino que como exponentes, su cambio en el uso de memoria tambien se comporta así.
 
 RESULTADOS CASOS SOLVER:
 
