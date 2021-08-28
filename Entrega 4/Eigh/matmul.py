@@ -151,7 +151,7 @@ for d in d_type:
 			fid = open(f"timing_solve_caso_{C}_float-PROMEDIOS.txt" , "r")
 
 		else:
-			fid = open(f"timing_solve_caso_{C}_float-PROMEDIOS.txt" , "r")
+			fid = open(f"timing_solve_caso_{C}_double-PROMEDIOS.txt" , "r")
 
 		Ns1 = []
 		dts1 = []
