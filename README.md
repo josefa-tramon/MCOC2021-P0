@@ -211,6 +211,24 @@ RESULTADOS CASOS EIGH:
 ![Eigh 5 Double](https://user-images.githubusercontent.com/62305749/130311888-ef4eda76-cb24-4f48-a36e-a9b945a4182c.png)
 
 
+P05:
+
+
+Los resultados de la complejidad computacional para la multiplicación de las matrices laplacianas A y B, son los siguientes:
+
+
+![Complejidad computacional - Matriz Completa](https://user-images.githubusercontent.com/62305749/131205280-0bead8f0-7773-44f8-9e4f-41d76ec608ae.png)
+
+Para la matriz completa, su complejidad fue aumentando a medida que también aumentaba las dimensiones de las matrices, lo cual se explica ya que el equipo debe utilizar mucha más memoria por que la ocupada crece exponencialmente, siendo un proceso cada vez más complejo de realizar y eficiente.
+
+
+![Complejidad computacional - Matriz Dispersa](https://user-images.githubusercontent.com/62305749/131205282-c891e878-f5f2-4ef4-9f60-9825b6286b79.png)
+
+EN cambio, para esta matriz, que se identifica por no ocupar memoria donde no hay valores diferentes de 0, el proceso computacional se mantiene practicamente lineal, variando muy poco con las matrices de dimención mayores a 2000, lo que hace que las matrices dispersas sean las adecuadas para calculos matemáticos en equipos con memoria limitada, y capacidad computacional regular. 
+
+
+
+
 
 
 
