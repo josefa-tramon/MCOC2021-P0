@@ -224,7 +224,7 @@ Para la matriz completa, su complejidad fue aumentando a medida que también aum
 
 ![Complejidad computacional - Matriz Dispersa](https://user-images.githubusercontent.com/62305749/131205282-c891e878-f5f2-4ef4-9f60-9825b6286b79.png)
 
-EN cambio, para esta matriz, que se identifica por no ocupar memoria donde no hay valores diferentes de 0, el proceso computacional se mantiene practicamente lineal, variando muy poco con las matrices de dimención mayores a 2000, lo que hace que las matrices dispersas sean las adecuadas para calculos matemáticos en equipos con memoria limitada, y capacidad computacional regular. 
+EN cambio, para esta matriz, que se identifica por no ocupar memoria donde no hay valores diferentes de 0, el proceso computacional se mantiene practicamente lineal, variando muy poco con las matrices de dimención mayores a 1000, lo que hace que las matrices dispersas sean las adecuadas para calculos matemáticos en equipos con memoria limitada, y capacidad computacional regular. 
 
 
 
