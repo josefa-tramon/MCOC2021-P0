@@ -229,10 +229,42 @@ EN cambio, para esta matriz, que se identifica por no ocupar memoria donde no ha
 
 P06:
 
+*Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
+
 Los resultados de la Complejidad Computacional se midieron para las funciones SPSOLVE e INV con matrices laplacianas Completas y Dispersas:
 
+**Matrices Completas
+
+![Matriz Completa SPSOLVE](https://user-images.githubusercontent.com/62305749/132078603-5f746260-fa30-4488-8359-ee16eb2644df.png)
+
+![Matriz Completa INV](https://user-images.githubusercontent.com/62305749/132078606-92955b3a-594a-471f-89f8-ceef566ff82a.png)
+
+**MAtrices Dispersas
+
+![Matriz Dispersa SPSOLVE](https://user-images.githubusercontent.com/62305749/132078605-1cb53b0d-0462-42ec-a147-f2a7a3a9d615.png)
+
+![Matriz Dispersa INV](https://user-images.githubusercontent.com/62305749/132078604-f733b731-648b-43ad-8645-91e870a3d289.png)
 
 
+
+*¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
+
+* Para el uso de matrices completas, el grad de complejidad se puede notar que disminuye en por lo menos un grado, siendo su comportamiento con tendencia cuadrática, a diferencia de la complejidad funcional de las funciones SPSOLVE e INV utiliando matrices dispersas, la cual es practicamente lineal y constante. 
+
+* Por tanto, la asintótica para N→∞ ,en cuanto al tiempo de ensamblado y solución, para el caso de las matrices completas, es cuadrático, demostrando que mientras mayor N, tambien menos eficiente es el cálculo. Para el caso de las funciones resueltas con matrices dispersas, el comportamiento es casi constante, lo que indica y demuestra una eficiencia muy alta, sin verse afectada en gran forma por el crecimeiento de las dimenciones de las matrices.
+
+
+*¿Como afecta el tamaño de las matrices al comportamiento aparente?
+
+* En cuanto al tiempo de solución, para la funcion INV, no varía mucho según se utiliza matriz completa o dispersa, pero si hay una gran diferencia en cuanto al tiempo de ensamblado. 
+* Para la función SPSOLVE, las diferencias de tiempo tanto solución y ensamblado, para el uso de los dos tipos de matrices, si varían entre sí, siendo notoramiente más eficiente los procesos usando matrices dispersas.
+
+
+*¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
+
+En cuanto a la estabilidad:
+* Función INV: Las corridas son muy similares entre si para todos los casos, excepto para el tiempo con uso de matriz completa, donde se ve que cada cierts tramos, si se parecen las corridas, pero no es siempre.
+* Función SPSOLVE: Para el caso de uso de matrices dispersas, tanto el tiempod e solución como ensamblado, tienen una alta estabilidad, ya que sus corridas son todas muy parecidas. En cambio, los tiempos de calculo de la función con uso de matrices completas, se asimilan en algunos rangos, confirmando nuevamente que nos un proceso muy estable.
 
 
 Las matrices laplacianas se formaron según los siguientes códigos:
