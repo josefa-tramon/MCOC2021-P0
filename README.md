@@ -239,7 +239,8 @@ Los resultados de la Complejidad Computacional se midieron para las funciones SP
 
 ![Matriz Completa INV](https://user-images.githubusercontent.com/62305749/132078606-92955b3a-594a-471f-89f8-ceef566ff82a.png)
 
-**MAtrices Dispersas
+
+**Matrices Dispersas
 
 ![Matriz Dispersa SPSOLVE](https://user-images.githubusercontent.com/62305749/132078605-1cb53b0d-0462-42ec-a147-f2a7a3a9d615.png)
 
