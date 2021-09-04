@@ -227,8 +227,27 @@ Para la matriz completa, su complejidad fue aumentando a medida que también aum
 EN cambio, para esta matriz, que se identifica por no ocupar memoria donde no hay valores diferentes de 0, el proceso computacional se mantiene practicamente lineal, variando muy poco con las matrices de dimención mayores a 1000, lo que hace que las matrices dispersas sean las adecuadas para calculos matemáticos en equipos con memoria limitada, y capacidad computacional regular. 
 
 
+P06:
+
+Los resultados de la Complejidad Computacional se midieron para las funciones SPSOLVE e INV con matrices laplacianas Completas y Dispersas:
 
 
+Las matrices laplacianas se formaron según los siguientes códigos:
 
+* Matriz Dispersa:
+
+def laplaciana (N, t = float64):
+  d = sparse.eye(N,N,1,dtype=t)
+
+  print(2*sparse.eye(N, dtype=t) - d - d.T)
+
+  return 2*sparse.eye(N, dtype=t) - d - d.T
+
+
+* Matriz Completa:
+
+def laplaciana_completa(N, t = np. float32):
+	e = np.eye(N) - np.eye(N,N,1)
+	return t(e+e.T)
 
 
