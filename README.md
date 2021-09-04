@@ -231,13 +231,6 @@ P06:
 
 Los resultados de la Complejidad Computacional se midieron para las funciones SPSOLVE e INV con matrices laplacianas Completas y Dispersas:
 
-![Matriz Completa PSOLVE](https://user-images.githubusercontent.com/62305749/132078260-27106591-0bc1-469d-a092-7125984a0501.png)
-![Matriz Completa SPSOLVE](https://user-images.githubusercontent.com/62305749/132078261-b8906996-3e2e-4d17-aee5-c0ad85dca7ba.png)
-![Matriz Dispersa INV](https://user-images.githubusercontent.com/62305749/132078262-8be37d4b-3889-4dda-b641-8b037f3e556d.png)
-![Matriz Completa INV](https://user-images.githubusercontent.com/62305749/132078263-702a32a9-16f6-4f41-89e3-acbda1257d66.png)
-
-
-
 
 
 
