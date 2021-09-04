@@ -237,16 +237,16 @@ Las matrices laplacianas se formaron según los siguientes códigos:
 * Matriz Dispersa:
 
 def laplaciana (N, t = float64):
-  d = sparse.eye(N,N,1,dtype=t)
 
-  print(2*sparse.eye(N, dtype=t) - d - d.T)
-
-  return 2*sparse.eye(N, dtype=t) - d - d.T
+	  d = sparse.eye(N,N,1,dtype=t)
+	  print(2*sparse.eye(N, dtype=t) - d - d.T)
+	  return 2*sparse.eye(N, dtype=t) - d - d.T
 
 
 * Matriz Completa:
 
 def laplaciana_completa(N, t = np. float32):
+
 	e = np.eye(N) - np.eye(N,N,1)
 	return t(e+e.T)
 
