@@ -79,14 +79,27 @@ for j in caso:
 
 		
 
+		y0 = 0
+		y1 = 0
+		d = 0
+		y10 = 0
+		y20 = 0
+		y30 = 0
+		x0 = 0
+		x1 = 0
+		m1 = 0
+		m2 = 0
+		m3 = 0
+
+
 		y0 = dts_ens0[0][0]
 		y1 = dts_ens0[-1][-1]
 
 		d = abs(y1 - y0)
 
 		y10 = y0 - d
-		y20 = y0 - 2*d
-		y30 = y0 - 3*d
+		y20 = y10 - d
+		y30 = y20 - d
 
 		x0 = Ns0[0][0]
 		x1 = Ns0[-1][-1]
@@ -134,14 +147,28 @@ for j in caso:
 
 		plt.loglog(Ns0[0],pop_sol,"--")															#Recta 1
 
+
+		y0 = 0
+		y1 = 0
+		d = 0
+		y10 = 0
+		y20 = 0
+		y30 = 0
+		x0 = 0
+		x1 = 0
+		m1 = 0
+		m2 = 0
+		m3 = 0
+
+
 		y0 = dts_sol0[0][0]
 		y1 = dts_sol0[-1][-1]
 
 		d = abs(y1 - y0)
 
 		y10 = y0 - d
-		y20 = y0 - 2*d
-		y30 = y0 - 3*d
+		y20 = y10 - d
+		y30 = y20 - d
 
 		x0 = Ns0[0][0]
 		x1 = Ns0[-1][-1]
